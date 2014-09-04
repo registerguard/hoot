@@ -11,3 +11,6 @@ See registerguard/ideas/issues/33 for all the background.
 * drop down
   * [RG test](http://registerguard.github.io/hoot/other/)
   * [simple test](http://registerguard.github.io/hoot/other/simple.html)
+
+
+Many thanks to [Owl Carousel](http://www.owlcarousel.owlgraphic.com/)(MIT License)
