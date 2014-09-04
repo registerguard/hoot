@@ -10,33 +10,6 @@
 
 <style>
 	
-	/* start of .mm */
-	.mm {
-		height: 0;
-		padding-bottom: 56.25%; /*16:9 = (9 / 16 = .5625) x 100*/
-		position: relative;
-		overflow: hidden;
-	}
-
-	.mm .embed {
-		border: 0;
-		width: 100% !important;
-		height: 100% !important;
-		max-width: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.theatre { padding-bottom: 59.171597633136%; } /*1.69:1 = (1 / 1.69 = .59171597633136) x 100*/
-
-	.slide { padding-bottom: 66.666666666667%; } /*3:2 = (2 / 3 = .66666666666667) x 100*/
-
-	.tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
-
-	.funky { padding-bottom: 41.666666666667%; } /* 1080 × 450  (450 / 1080) = 41.66667 */
-	/* end of .mm */
-	
 	/* */
 	/* What I want */
 	/* Have .owl-nav to have:
@@ -49,6 +22,106 @@
 	#wrapper{
 		max-width:980px;
 		margin:0 auto;
+	}
+	
+	.owl-wrap .owl-item div{
+		/*padding:5px;*/
+		padding: 0;
+	}
+	.owl-wrap .owl-item img{
+		width: 100%;
+		height: auto;
+		max-height: none;
+		margin: 0;
+	}
+
+	.owl-nav {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		/*top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		height: auto;*/
+	}
+	
+	.owl-nav img{
+		transition: opacity 0.2s ease;
+		opacity: .2;
+	}
+	
+	.owl-nav img:hover{
+		transition: opacity 0.1s ease;
+		opacity: .5;
+	}
+	
+	.owl-prev {
+		position: absolute;
+		pointer-events: auto;
+		left: 2%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		width: 5%;
+	}
+	
+	.owl-next{
+		pointer-events: auto;
+		position: absolute;
+		right: 2%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		width:5%;
+	}
+	
+	.owl-caption{
+		font-family: Cambria, Georgia, serif;
+		font-style: italic;
+		font-size: .9em;
+		background: rgb(36, 36, 36);
+		color: white;
+		margin-top:0;
+		padding: 2%;
+		line-height: 1.2em
+	}
+	
+	.owl-dots{
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 2%;
+		left: 2%;
+	}
+	
+	.owl-dot{
+		background: black;
+		border-radius: 20px;
+		width: 15px;
+		height: 15px;
+		float: left;
+		clear: all;
+		margin: 0 1% 1% 0;
+		transition: opacity 0.2s ease;
+		opacity: .2;
+	}
+	
+	.owl-dot:hover{
+		transition: opacity 0.2s ease;
+		opacity: .5;
+		cursor: pointer;
+	}
+	
+	.owl-dots .active{
+		opacity: .5;
+	}
+	
+</style>
 	}
 	
 	.owl-wrap .owl-item div{
@@ -244,11 +317,7 @@
 				nav:true,
 				autoHeight:true,
 				loop:true,
-				navText : ["<img src='media/arrowpc.png' width='100%'>", "<img src='media/arrowfc.png' width='100%'>"],
-				dots:true,
-				dotsEach: true,
-				video:true,
-				videoHeight:"100%"
+				navText : ["<img src='media/arrowp.png' width='100%'>", "<img src='media/arrowf.png' width='100%'>"]
 			});
 			
 			var $owliframe = $(".active").find("iframe");
