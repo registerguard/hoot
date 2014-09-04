@@ -6,11 +6,11 @@ See registerguard/ideas/issues/33 for all the background.
 
 ### Links
 
-* [RG test](http://registerguard.github.io/hoot/index.html)
-* [simple test](http://registerguard.github.io/hoot/simple.html)
+* [RG test](http://dev.registerguard.com/hoot/index.html)
+* [simple test](http://dev.registerguard.com/hoot/simple.html)
 * drop down
-  * [RG test](http://registerguard.github.io/hoot/other/)
-  * [simple test](http://registerguard.github.io/hoot/other/simple.html)
+  * [RG test](http://dev.registerguard.com/hoot/other/)
+  * [simple test](http://dev.registerguard.com/hoot/other/simple.html)
 
 
 Many thanks to [Owl Carousel](http://www.owlcarousel.owlgraphic.com/)(MIT License)
