@@ -1,0 +1,50 @@
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+
+<style>
+	
+	.pics{
+		
+	}
+	
+	.bigpics{
+		display: none;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="pics">
+			<img src="media/2.jpg" width="300px" height="200px">
+			<img src="media/4.jpg" width="300px" height="200px">
+		</div>
+		<div class="bigpics">
+			<div class="imgwrap">
+				<img src="media/2.jpg" width="100%">
+				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
+			</div>
+			<div class="imgwrap">
+				<img src="media/4.jpg" width="100%">
+				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		//$(document).ready(function() {
+			$(".pics").click(function(){
+				$(".bigpics").slideToggle();
+				//$(".pics").slideToggle();
+			});
+			$(".bigpics").click(function(){
+				$(".bigpics").slideToggle("slow");
+				//$(".pics").slideToggle("slow");
+			});
+		//});
+	</script>
+</body>
