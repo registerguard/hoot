@@ -142,14 +142,20 @@
 <style> /*robbyD*/
 
 	.pics{
-		margin: 0 10px 10px 0;
-		
+		margin-top: 0px;
+	}
+	
+	.pics img:hover{
+		cursor: pointer;
 	}
 
 	.bigpics{
 		display:none;
 		margin: 10px 0;
-		
+	}
+	
+	.bigpics img:hover{
+		cursor: pointer;
 	}
 
 	.owl-caption{
@@ -1277,8 +1283,8 @@
 													
 													
 													
-													<div class="mm" style="margin-bottom:0;"><iframe width="300" height="169" src="http://www.youtube.com/embed/T_Wd_lqKcRU?hd=1" frameborder="0" allowfullscreen=""></iframe></div>
-													
+													<!-- <div class="mm" style="margin-bottom:0;"><iframe width="300" height="169" src="http://www.youtube.com/embed/T_Wd_lqKcRU?hd=1" frameborder="0" allowfullscreen=""></iframe></div> -->
+													<img src="media/other1.jpg" style="margin-bottom:0">
 												
 												
 												
@@ -1352,16 +1358,26 @@
 								<figure>
 									
 									<div class="pics">
-										<img class="pics-pic" src="media/2.jpg">
-										<img class="pics-pic" src="media/4.jpg">
+										<img class="pics-pic" src="media/other2.jpg">
+										<img class="pics-pic" src="media/other3.jpg">
+										<img class="pics-pic" src="media/other4.jpg">
+										<img class="pics-pic" src="media/other5.jpg">
 									</div>
 									<div class="bigpics">
 										<div class="imgwrap">
-											<img src="media/2.jpg" width="100%">
+											<img src="media/other2.jpg" >
 											<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 										</div>
 										<div class="imgwrap">
-											<img src="media/4.jpg" width="100%">
+											<img src="media/other3.jpg">
+											<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
+										</div>
+										<div class="imgwrap">
+											<img src="media/other4.jpg">
+											<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
+										</div>
+										<div class="imgwrap">
+											<img src="media/other5.jpg">
 											<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 										</div>
 									</div>
@@ -4365,12 +4381,10 @@
 	<script>
 		//$(document).ready(function() {
 			$(".pics").click(function(){
-				$(".bigpics").slideToggle("4000");
-				//$(".pics").slideToggle("slow");
+				$(".bigpics").slideToggle("slow");
 			});
 			$(".bigpics").click(function(){
-				$(".bigpics").slideToggle("1000");
-				//$(".pics").slideToggle("slow");
+				$(".bigpics").slideToggle("slow");
 			});
 		//});
 	</script>
