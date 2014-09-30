@@ -11,19 +11,20 @@
 		margin: 0 auto;
 	}
 	
-	.pics{
+	.hoot-pics{
 		
 	}
 	
-	.pics img:hover{
+	.hoot-pics img:hover{
 		cursor: pointer;
 	}
 	
-	.bigpics{
+	.hoot-bigpics{
 		display: none;
+		width: 100%; /* keeps images from floating up next to .hoot-pics */
 	}
 	
-	.bigpics img:hover{
+	.hoot-bigpics img:hover{
 		cursor: pointer;
 	}
 	
@@ -31,28 +32,26 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div class="pics">
+		<div class="hoot-pics">
 			<img src="media/other2.jpg" width="100px" height="67px">
 			<img src="media/other3.jpg" width="100px" height="67px">
 			<img src="media/other4.jpg" width="100px" height="67px">
 			<img src="media/other5.jpg" width="100px" height="67px">
 		</div>
-		<div class="bigpics">
-			<div class="imgwrap">
+		<div class="hoot-bigpics">
+			<div class="hoot-imgwrap">
 				<img src="media/other2.jpg" width="100%">
 				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 			</div>
-			<div class="imgwrap">
+			<div class="hoot-imgwrap">
 				<img src="media/other3.jpg" width="100%">
 				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 			</div>
-		</div>
-		<div class="bigpics">
-			<div class="imgwrap">
+			<div class="hoot-imgwrap">
 				<img src="media/other4.jpg" width="100%">
 				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 			</div>
-			<div class="imgwrap">
+			<div class="hoot-imgwrap">
 				<img src="media/other5.jpg" width="100%">
 				<p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p>
 			</div>
@@ -61,15 +60,8 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
-		//$(document).ready(function() {
-			$(".pics img").click(function(){
-				$(".bigpics").slideToggle("slow");
-				//$(".pics").slideToggle();
-			});
-			$(".bigpics img").click(function(){
-				$(".bigpics").slideToggle("slow");
-				//$(".pics").slideToggle("slow");
-			});
-		//});
+		$(".hoot-pics img, .hoot-bigpics img").click(function(){
+			$(".hoot-bigpics").slideToggle();
+		});
 	</script>
 </body>
