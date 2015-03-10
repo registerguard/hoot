@@ -1533,10 +1533,15 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 								<div class="owl-wrap owl-carousel">
 									<!-- <div><a class="owl-video" href="https://www.youtube.com/watch?v=eacGuG660_A"></a><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div> -->
 									<!-- <div><div class="owl-videowrap"><div class="mm"><iframe width="1280" height="720" src="//www.youtube.com/embed/eacGuG660_A?rel=0" frameborder="0" allowfullscreen class="embed"></iframe></div></div><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div> -->
-									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/1.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+									<!-- <div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/1.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
 									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/4.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
 									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/3.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
 									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/2.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+								 -->
+									<div><img src="media/1.jpg" alt=""><p class="owl-caption">ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE</p></div>
+									<div><img src="media/4.jpg" alt=""><p class="owl-caption">TWO TWO TWO TWO TWO TWO TWO TWO TWO TWO TWO TWO</p></div>
+									<div><img src="media/3.jpg" alt=""><p class="owl-caption">THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE THREE </p></div>
+									<div><img src="media/2.jpg" alt=""><p class="owl-caption">FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR FOUR</p></div>
 								</div> <!-- /.owl-wrap .owl-carousel -->
 							</div> <!-- /#wrapper -->
 
@@ -2756,9 +2761,22 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 
 
 	<!-- ROBBY D -->
+<script src="owl/owl.carousel.js"></script>
 
-
-<script src="hoot.js"></script>
+<script>
+$(document).ready(function() {
+	var $owl = $(".owl-wrap");
+	$owl.owlCarousel({
+		items:1,
+		margin:10,
+		nav:true,
+		loop:true,
+		navText : ["<i class='fa fa-chevron-circle-left owl-nav-button'></i>", "<i class='fa fa-chevron-circle-right owl-nav-button'></i>"],
+		autoHeight:true,
+		//lazyLoad: true
+	});
+});
+</script>
 
 
 
