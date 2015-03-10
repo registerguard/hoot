@@ -49,6 +49,12 @@ html, body{
 	/*z-index: ;*/
 }
 
+@media screen and (min-width: 666px) and (max-width: 1005px){
+	.owl-wrap .owl-item img{
+		max-height: 480px;
+	}
+}
+
 @media screen and (max-width: 665px){
 	.owl-wrap .owl-item img{
 		max-height: 320px;
