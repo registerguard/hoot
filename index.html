@@ -71,7 +71,7 @@
 	<link href="http://registerguard.com/respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
 <![endif]-->
 
-<link rel="stylesheet" href="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20140214/1/css/bulldog.min.css">
+<link rel="stylesheet" href="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20150309/1/css/bulldog.min.css">
 
 
 
@@ -220,38 +220,79 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 
 <!--  -->
 	<!-- OWL STUFF -->
+	<!-- ROBBY D -->
 <!--  -->
 <link rel="stylesheet" href="owl/owl.carousel.css">
 <!-- <link rel="stylesheet" href="owl/owl.theme.default.min.css"> -->
 
 <style>
 	
-	/* */
-	/* What I want */
-	/* Have .owl-nav to have:
-		top:0;
-		transform: NOTHING;
-		height: image.height();
-		
-	*/
+	html, body{
+		margin: 0 10px;
+		display: block;
+	}
 	
 	#wrapper{
-		max-width:980px;
-		margin:0 auto;
+		width: 100%;
+		max-width: 980px;
+		margin: 0 auto;
+		background: rgb(36, 36, 36);
+		/*max-height: 500px;*/
 	}
 	
 	.owl-wrap .owl-item div{
 		/*padding:5px;*/
 		padding: 0;
-	}
-	.owl-wrap .owl-item img{
 		width: 100%;
+		
+		position: relative;
+		/*max-height: 500px;*/
+	}
+	
+	.owl-wrap .owl-item div .fa{
+		color: white;
+		/*content: "\f1ce";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;*/
+		font-size: 3em;
+		opacity: .4;
+		/* ANIMATION */
+		
+		/* CENTER */
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		margin: -3% 0 0 -3%;
+		/* LAYER */
+		/*z-index: 1;*/
+	}
+	
+	.owl-wrap .owl-item img{
+		max-width: 100%;
+		width: auto;
 		height: auto;
-		max-height: none;
-		margin: 0;
+		max-height: 640px;
+		margin: 0 auto;
+		/*z-index: ;*/
+	}
+	
+	@media screen and (min-width: 321px) and (max-width: 665px){
+		.owl-wrap .owl-item img{
+			max-height: 443px;
+		}
+	}
+	
+	@media screen and (max-width: 320px){
+		.owl-wrap .owl-item img{
+			max-height: 200px;
+		}
 	}
 
 	.owl-nav {
+		font-size: 2.5em;
+		color: white;
 		pointer-events: none;
 		position: absolute;
 		top: 0;
@@ -264,14 +305,14 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 		height: auto;*/
 	}
 	
-	.owl-nav img{
+	.owl-nav-button {
 		transition: opacity 0.2s ease;
-		opacity: .5;
+		opacity: .4;
 	}
 	
-	.owl-nav img:hover{
-		transition: opacity 0.1s ease;
-		opacity: .9;
+	.owl-nav-button:hover{
+		transition: opacity 0.3s ease;
+		opacity: .6;
 	}
 	
 	.owl-prev {
@@ -282,7 +323,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
-		width: 5%;
+		width: auto;
 	}
 	
 	.owl-next{
@@ -293,7 +334,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
-		width:5%;
+		width: auto;
 	}
 	
 	.owl-caption{
@@ -307,6 +348,15 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 		line-height: 1.2em
 	}
 	
+	@media screen and (min-width: 665px){
+		.owl-caption{
+			position: absolute;
+			bottom: 0;
+			background: rgba(36, 36, 36, .7);
+			margin: 0;
+		}
+	}
+	
 	.owl-dots{
 		width: 100%;
 		text-align: center;
@@ -316,7 +366,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 	}
 	
 	.owl-dot{
-		background: black;
+		background: white;
 		border-radius: 20px;
 		width: 15px;
 		height: 15px;
@@ -1465,7 +1515,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 
 
 
-													<div class="mm" style="margin-bottom:0;"><iframe width="300" height="169" src="http://www.youtube.com/embed/eacGuG660_A?hd=1" frameborder="0" allowfullscreen=""></iframe></div>
+													<!-- <div class="mm" style="margin-bottom:0;"><iframe width="300" height="169" src="http://www.youtube.com/embed/eacGuG660_A?hd=1" frameborder="0" allowfullscreen=""></iframe></div> -->
 
 
 
@@ -1491,7 +1541,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 
 					<!-- </section> -->
 
-					<hr>
+					<!-- <hr> -->
 
 
 
@@ -1638,51 +1688,19 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 							<!-- </hgroup> -->
 
 
+							<!-- ROBBY D -->
 
 
-
-							<div class="owl-wrap owl-carousel">
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<!-- <div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/1.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/2.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/3.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
-								<div><img src="media/4.jpg"><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div> -->
-							</div>
+							<div id="wrapper">
+								<div class="owl-wrap owl-carousel">
+									<!-- <div><a class="owl-video" href="https://www.youtube.com/watch?v=eacGuG660_A"></a><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div> -->
+									<!-- <div><div class="owl-videowrap"><div class="mm"><iframe width="1280" height="720" src="//www.youtube.com/embed/eacGuG660_A?rel=0" frameborder="0" allowfullscreen class="embed"></iframe></div></div><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div> -->
+									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/1.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/4.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/3.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+									<div><i class="fa fa-circle-o-notch fa-spin"></i><img class="owl-lazy" data-src="media/2.jpg" alt=""><p class="owl-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum luctus mi et semper. Proin metus quam, semper non tempor et, semper ut diam. (First Last/The Register-Guard)</p></div>
+								</div> <!-- /.owl-wrap .owl-carousel -->
+							</div> <!-- /#wrapper -->
 
 
 
@@ -2875,8 +2893,7 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>if(!window.jQuery){document.write('<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.2.min.js"><\/script>');}</script>
 
-<script src="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20140214/1/js/bulldog.min.js"></script>
-
+<script src="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20150309/1/js/bulldog.min.js"></script>
 
 
 	<!--<script src="https://dl.dropboxusercontent.com/u/1277106/ticker/jquery.scrollbox.js"></script>
@@ -2900,48 +2917,25 @@ a.PIN_1408639021062_embed_grid_ft span.PIN_1408639021062_embed_grid_ft_logo { ve
 
 
 
-
+	<!-- ROBBY D -->
 
 
 
 	<!-- OWL -->
 	<script src="owl/owl.carousel.js"></script>
 	<script>
-		$(document).ready(function() {
+		$(window).ready(function() {
 			var $owl = $(".owl-wrap");
-		
 			$owl.owlCarousel({
 				items:1,
-				lazyLoad:true,
 				margin:10,
 				nav:true,
-				autoHeight:true,
 				loop:true,
-				navText : ["<img src='media/arrowp.png' width='100%'>", "<img src='media/arrowf.png' width='100%'>"]
+				navText : ["<i class='fa fa-chevron-circle-left owl-nav-button'></i>", "<i class='fa fa-chevron-circle-right owl-nav-button'></i>"],
+				autoHeight:true,
+				lazyLoad: true
 			});
-			
-			var $activeimg = $(".active").find("img");
-			console.log($activeimg.width() + " , " + $activeimg.height());
-			//console.log($(".active").width() + " , " + $(".active").height());
-			
-			// $(".owl-nav").click(function(){
-			// 	console.log("click");
-			// });
-			
-			$owl.on('changed.owl.carousel', function(event) {
-				console.log($(this).data('owlCarousel')._current);
-				//$(".owl-prev").css("width", "20px");
-				$activeimg = $(".active").find("img");
-				console.log($activeimg.width() + " , " + $activeimg.height());
-				// console.log($(".active").width() + " , " + $(".active").height());
-			});
-			
-			var $owlnav = $(".owl-nav");
-			console.log($owlnav.height());
-			 
-			
 		});
-		
 	</script>
 
 

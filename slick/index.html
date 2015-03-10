@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
+	<style>
+		body{
+			background: black;
+		}
+		.slick{
+			max-width:980px;
+			margin: 0 auto;
+		}
+		.slick div{
+			
+		}
+		.slick div img{
+			max-width: 100%;
+			max-height: 100vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="slick">
+		<div><img src="../media/4.jpg"></div>
+		<div><img src="../media/2.jpg"></div>
+		<div><img src="../media/1.jpg"></div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $('.slick').slick({
+	    dots: true,
+	    draggable: true,
+	    infinite: true,
+	    
+	  });
+	});
+	</script>
+</body>
