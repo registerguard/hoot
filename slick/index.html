@@ -1,40 +1,109 @@
 <html>
 <head>
+	<link rel="stylesheet" href="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20150309/1/css/bulldog.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
 	<style>
 		body{
-			background: black;
+			xbackground: black;
 		}
 		.slick{
 			max-width:980px;
 			margin: 0 auto;
+		}
+		@media screen and (min-width: 1005px){
+			.slick{
+				width: 980px;
+				height: 356px;
+			}
+		}
+		@media screen and (min-width: 665px) and (max-width: 1004px){
+			.slick{
+				width: 640px;
+				height: 257px;
+			}
+		}
+		@media screen and (max-width: 664px){
+			.slick{
+				max-width: 640px;
+				max-height: 257px;
+				min-width: 300px;
+				min-height: 260px;
+			}
 		}
 		.slick div{
 			
 		}
 		.slick div img{
 			max-width: 100%;
-			max-height: 100vw;
+			/*max-height: 100vw;*/
+			margin: 0 auto;
 		}
+		
+		/* NAV ARROWS */
+		.slick-next:before {
+			font-family: FontAwesome;
+			content: '\f138';
+			color: black;
+			
+		}
+		.slick-prev:before {
+			font-family: FontAwesome;
+			content: '\f137';
+			color: black;
+		}
+		
+		/* DOTS */
+		.slick-dots li button:before{
+			font-family: FontAwesome;
+			content: '\f111';
+			font-size: 18px;
+		}
+		
 	</style>
 </head>
 <body>
-	<div class="slick">
-		<div><img src="../media/4.jpg"></div>
-		<div><img src="../media/2.jpg"></div>
-		<div><img src="../media/1.jpg"></div>
+	<div class="">
+		<div class="slick">
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/3.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+			<div><img src="../media/4.jpg"></div>
+			<div><img src="../media/2.jpg"></div>
+			<div><img src="../media/1.jpg"></div>
+		</div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20150309/1/js/bulldog.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 	<script>
 	$(document).ready(function(){
-	  $('.slick').slick({
-	    dots: true,
-	    draggable: true,
-	    infinite: true,
-	    
-	  });
+		$('.slick').slick({
+			dots: true,
+			draggable: true,
+			infinite: true,
+			slidesToShow: 1,
+			//adaptiveHeight: true,
+		});
 	});
 	</script>
 </body>
