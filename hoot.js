@@ -1,4 +1,4 @@
-$(window).ready(function() {
+$(document).ready(function() {
 	var $owl = $(".owl-wrap");
 	$owl.owlCarousel({
 		items:1,
@@ -6,7 +6,7 @@ $(window).ready(function() {
 		nav:true,
 		loop:true,
 		navText : ["<i class='fa fa-chevron-circle-left owl-nav-button'></i>", "<i class='fa fa-chevron-circle-right owl-nav-button'></i>"],
-		autoHeight:true,
+		autoHeight:true
 		//lazyLoad: true
 	});
 });
